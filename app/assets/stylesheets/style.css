@@ -189,6 +189,18 @@ form input[type="submit"]:hover {
   background-color: #fafafa;
 }
 
+.photo-item{
+  background-color: #fafafa;
+  height: 450px;
+  margin: 0 160px;
+}
+
+.photo-image{
+  height: 300px;
+  width: auto;
+}
+
+
 
 
 

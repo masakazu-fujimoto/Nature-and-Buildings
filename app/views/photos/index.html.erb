@@ -39,11 +39,9 @@
   </div>
 </section>
 
-<div class="contents row">
+<div class="photo-item">
   <% @photos.each do |photo| %>
-    
-    <%= photo.name %>
-      
-    </div>
+    <%= image_tag photo.image.variant(resize: '500x500'),class: 'photo-image' if photo.image.attached? %>
+    <%= photo.name %>   
   <% end %>
 </div>
