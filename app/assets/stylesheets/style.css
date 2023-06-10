@@ -1,0 +1,196 @@
+/* リセットCSS */
+body {
+  font-size: 14px;
+  color: #333;
+  margin: 0 auto;
+}
+
+h1,h2,h3,h4,h5,h6,p {
+  padding: 10px 0;
+  margin: 0;
+}
+
+ul,li {
+  padding: 0;
+  margin: 0;
+}
+
+/* ヘッダー */
+header {
+  display: flex;
+  width: 100%;
+  height: 100px;
+  background-image: url(adpIMG_3403-.jpeg);
+  align-items: center;
+  position: fixed;
+}
+
+.heading {
+  width: 50%;
+  margin-left: 200px;
+}
+
+.navbar {
+  width: 50%;
+  margin-top: 20px;
+}
+
+.nav-lists {
+  display: flex;
+  justify-content: space-around;
+  margin-left: 150px;
+  margin-right: 200px;
+  font-size: large;
+}
+
+li {
+  list-style: none;
+}
+
+/* container */
+.wrapper{
+  width:100%;
+  padding: 130px 0px ;
+}
+.container{
+  max-width:1000px;
+  margin:0px auto;
+  padding:80px 0px;
+}
+/* content */
+.content {
+  padding:50px;
+  text-align:center;
+}
+.heading2{
+  margin:0px 0px 40px 0px;
+  font-size: 36px;
+  font-weight: bolder;
+  text-align: center;
+}
+
+.wrapper2{
+  width:100%;
+  padding: 60px 0px;
+  background-color:#fafafa;
+}
+.container2{
+  max-width:1000px;
+  margin:0px auto;
+  padding:80px 0px;
+}
+/* content */
+@media (min-width: 992px) {
+  .content2 {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+}
+
+@media (min-width: 992px) {
+  .content2 {
+      flex-direction:row-reverse;
+  }
+}
+.content2-item {
+  width:100%;
+}
+@media (min-width: 992px) {
+  .content2-item {
+      width:50%;
+  }
+}
+.image{
+  display:block;
+  max-width:100%;
+  margin:0px auto;
+}
+.text{
+  padding:50px;
+}
+
+.wrapper3{
+  width:100%;
+  padding: 60px 0px;
+}
+.container3{
+  max-width:1000px;
+  margin:0px auto;
+  padding:80px 0px;
+}
+/* content */
+@media (min-width: 992px) {
+  .content3 {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+}
+.content3-item {
+  width:100%;
+}
+@media (min-width: 992px) {
+  .content3-item {
+      width:50%;
+  }
+}
+.image{
+  display:block;
+  max-width:100%;
+  margin:0px auto;
+}
+.text{
+  padding:50px;
+}
+
+@media (min-width: 992px) {
+  .content2 {
+      flex-direction:row-reverse;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.contents-new{
+  padding: 130px;
+  text-align: center;
+  background-color: #fafafa;
+}
+
+form input,
+form textarea {
+  width: 50%;
+  margin: 5px 0 15px;
+  padding: 10px;
+  border: 1px solid #D8D8D8;
+  border-radius: 5px;
+  font-family: "游ゴシック", "YuGothic";
+}
+
+form input[type="submit"] {
+  background-color: royalblue;
+  border-radius: 20px;
+  color: #fff;
+  border: 0;
+  font-size: 18px;
+}
+
+form input[type="submit"]:hover {
+  background-color: #84d3ef;
+}
+
+.contents-new2{
+  padding: 260px 0px;
+  text-align: center;
+  background-color: #fafafa;
+}
+
+
+
+
+
+
