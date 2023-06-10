@@ -1,4 +1,4 @@
 Rails.application.routes.draw do
   root to: 'photos#index'
-  resources :photos, only: :index
+  resources :tweets, only: [:index, :new]
 end
