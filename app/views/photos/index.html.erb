@@ -39,9 +39,10 @@
   </div>
 </section>
 
-<div class="photo-item">
-  <% @photos.each do |photo| %>
-    <%= image_tag photo.image.variant(resize: '500x500'),class: 'photo-image' if photo.image.attached? %>
-    <%= photo.name %>   
+<h2 class="wrapper4">新規投稿一覧</h2>
+  <div class="photo-item">
+    <% @photos.each do |photo| %>
+      <li><%= image_tag photo.image.variant(resize: '400x400', gravity: "center", crop: "300x300+0+0" ) if photo.image.attached? %></li>
+      <li><%= photo.name %></li>   
   <% end %>
 </div>
