@@ -1,6 +1,8 @@
 <div class="contents-new">
   <h1><%= @photo.name %></h1>
-  <div class="container-new">
-    <%= image_tag @photo.image.variant(resize: '400x400', gravity: "center", crop: "300x300+0+0" ) %>
-  </div>
+  <%= image_tag @photo.image.variant(resize: '400x400', gravity: "center", crop: "300x300+0+0" ) %>
+    <div class="heading2">
+      <%= link_to '編集する ▶︎', edit_photo_path(@photo.id), method: :get %><br>
+      <%= "or" %>
+    </div>
 </div>
