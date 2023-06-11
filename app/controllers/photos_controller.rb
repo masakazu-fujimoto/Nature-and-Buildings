@@ -25,6 +25,11 @@ class PhotosController < ApplicationController
     photo.update(photo_params)
   end
 
+  def destroy
+    photo = Photo.find(params[:id])
+    photo.destroy
+  end
+
   private
   def photo_params
     params.require(:photo).permit(:name, :image, :text)
