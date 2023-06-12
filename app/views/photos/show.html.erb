@@ -20,7 +20,7 @@
       <% @comments.each do |comment| %>
         <p>
           <strong><%= link_to comment.user.nickname, "/users/#{comment.user_id}" %>：</strong>
-          <%= comment.text %>
+          <%= comment.content %>
         </p>
       <% end %>
     </div>
