@@ -2,6 +2,11 @@ class PhotosController < ApplicationController
   before_action :move_to_index, except: [:index]
   def index
     @photos = Photo.all
+    @q = Photo.ransack(params[:q])
+    @photos = @q.result(distinct: true)
+    if @q_header
+      @photos = @q_header.result(distinct: true)
+    end
   end
 
   def new
