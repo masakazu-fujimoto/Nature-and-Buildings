@@ -14,23 +14,12 @@
       <div class="heading">
         <h1 class="title">記念すべき第一号</h1>
       </div>
-      <div class="navbar">
-      <%= search_form_for @q, url: search_photos_path do |f| %>
-        <%= f.label :name_or_user_nickname_cont, 'ユーザー名' %>
-        <%= f.search_field :name_or_user_nickname_cont %>
-        <br>
-        <%= f.submit '検索' %>
-      <% end %>
-      <% if user_signed_in? %>
-        <ul class="nav-lists">
-          <%= link_to "ログアウト", destroy_user_session_path, method: :delete %>
-          <%= link_to "投稿する", new_photo_path, class: "post" %>
-        </ul>
-      <% else %>
-        <ul class="nav-lists">
-          <%= link_to "ログイン", new_user_session_path, class: "post" %>
-          <%= link_to "新規登録", new_user_registration_path, class: "post" %>
-      <% end %>    
+      <div class="nav-lists">
+        <%= search_form_for @q, url: search_photos_path do |f| %>
+          <%= f.label :name_or_user_nickname_cont, 'キーワード入力' %>
+          <%= f.search_field :name_or_user_nickname_cont %>
+          <%= f.submit '検索' %>
+        <% end %>
       </div>
     </header>
     <%= yield %>
