@@ -35,7 +35,7 @@ class PhotosController < ApplicationController
 
   private
   def photo_params
-    params.require(:photo).permit(:name, :image, :text)
+    params.require(:photo).permit(:name, :image, :text).merge(:nickname)
   end
 
   def move_to_index
