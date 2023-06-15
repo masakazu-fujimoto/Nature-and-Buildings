@@ -32,10 +32,12 @@ header {
 
 .navbar {
   width: 50%;
-  margin-top: 50px;
+  padding: 20px;
+  
 }
 
 .nav-lists {
+  display: flex;
   justify-content: space-around;
 }
 
@@ -157,7 +159,7 @@ a {
 
 form input,
 form textarea {
-  width: 50%;
+  width: 30%;
   margin: 5px 0 15px;
   padding: 10px;
   border: 1px solid #D8D8D8;

@@ -1,4 +1,14 @@
+<div class="contents-new">
+  <div class="container-new">
+    <%= search_form_for @q, url: search_photos_path do |f| %>
+      <%= f.label :name_or_user_nickname_cont, 'キーワード入力' %>
+      <%= f.search_field :name_or_user_nickname_cont %>
+      <%= f.submit '検索' %>
+    <% end %>
+  </div>
+</div>
 <h1>検索結果</h1>
   <% @results.each do |photo| %>
     <%= photo.name %> 
+    
   <% end %>
