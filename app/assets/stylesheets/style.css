@@ -201,14 +201,15 @@ form input[type="submit"]:hover {
   width: 25%;
 }
 
-.footer{
-  padding-bottom: 60px;
-  box-sizing: border-box;
-}
+
 
 .nav-lists2{
+  background-color: royalblue;
+  border-radius: 20px;
+  border: 0;
+  font-size: 18px;
   position: fixed;
-  bottom: 0;
+  bottom: 50px;
 }
 
 
