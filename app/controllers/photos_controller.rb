@@ -1,5 +1,5 @@
 class PhotosController < ApplicationController
-  before_action :move_to_index, except: [:index, :show]
+  before_action :move_to_index, except: [:index, :show, :search]
   before_action :set_q, only: [:index, :search]
 
   def index
@@ -35,7 +35,7 @@ class PhotosController < ApplicationController
   end
 
   def search
-    @results = @q.result
+    @photos = Photo.search(params[:keyword])
   end
 
 

@@ -1,10 +1,11 @@
+
 <div class="contents-new">
   <div class="container-new">
-    <h1>検索結果</h1>
-      <% @results.each do |result| %>
-        <%= link_to photo_path(result) do %>
-        <%= image_tag result.image.variant(resize: '400x400') %>
-        <%= result.name %> 
+    <h1>検索結果一覧</h1>
+      <% @photos.each do |photo| %>
+        <%= link_to photo_path(photo) do %>
+        <%= image_tag photo.image.variant(resize: '300x300') %>
+        <%= photo.name %> 
         <% end %>
       <% end %>
   </div>
