@@ -183,6 +183,7 @@ form input[type="submit"]:hover {
 }
 
 .wrapper4{
+  width: 100%;
   text-align: center;
   font-size: 36px;
 }
