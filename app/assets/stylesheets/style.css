@@ -18,27 +18,24 @@ ul,li {
 header {
   width: 100%;
   position: fixed;
-  height: 80px;
+  height: 120px;
   background-color: #f0f0f0;
-  padding: 10px 0;
-  display: flex;
+  text-align: center;
 }
 
-.heading {
-  width: 50%;
-  margin-left: 150px;
-  margin-top: 10px;
+header .headline{
+  line-height: 50px;
+  font-size: 30px;
 }
 
 .navbar {
-  width: 50%;
-  padding: 20px;
-
+  font-weight: bolder;
+  font-size: large;
 }
 
 .nav-lists {
-  display: flex;
-  justify-content: space-around;
+  display: inline-block;
+  margin: 0 20px;
 }
 
 
@@ -201,8 +198,6 @@ form input[type="submit"]:hover {
   width: 25%;
 }
 
-
-
 .nav-lists2{
   background-color: royalblue;
   border-radius: 20px;
@@ -211,6 +206,8 @@ form input[type="submit"]:hover {
   position: fixed;
   bottom: 50px;
 }
+
+
 
 
 
