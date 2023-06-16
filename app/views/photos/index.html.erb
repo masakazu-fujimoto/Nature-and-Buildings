@@ -50,16 +50,14 @@
 </div>
 
 <section class="footer">
-  
-  <div class="navbar2">
     <div class="nav-lists2">
-    <%= search_form_for @q, url: search_photos_path do |f| %>
-      <%= f.label :name_or_user_nickname_cont, 'キーワード入力' %>
-        <%= f.search_field :name_or_user_nickname_cont %>
-        <%= f.submit '検索' %>
-      <% end %>
+      <%= search_form_for @q, url: search_photos_path do |f| %>
+        <%= f.label :name_or_user_nickname_cont, 'キーワード入力' %>
+          <%= f.search_field :name_or_user_nickname_cont %>
+          <%= f.submit '検索' %>
+        <% end %>
+      </div>
     </div>
-  </div>
 </section>
 
 
