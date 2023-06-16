@@ -7,4 +7,12 @@ class Photo < ApplicationRecord
   validates :text, presence: true
   validates :image, presence: true
 
+  def self.search(search)
+    if search != ""
+      Photo.where('text LIKE(?)', "%#{search}%")
+    else
+      Photo.all
+    end
+  end
+
 end
