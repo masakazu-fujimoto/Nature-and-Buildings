@@ -11,7 +11,7 @@ class Photo < ApplicationRecord
     if search != ""
       Photo.where('name LIKE(?)', "%#{search}%")
     else
-      Photo.all
+      Photo.none
     end
   end
 
