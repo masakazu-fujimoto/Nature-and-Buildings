@@ -1,6 +1,6 @@
 class PhotosController < ApplicationController
   before_action :move_to_index, except: [:index, :show, :search]
-  before_action :search_photo, only: [:search, :search_photo_result]
+  before_action :set_q, only: [:index, :search]
 
   def index
     @photos = Photo.includes(:user).order("created_at DESC")
@@ -35,14 +35,8 @@ class PhotosController < ApplicationController
   end
 
   def search
-    @photo = Photo.find_by_id(params[:id])
+    @results = @q.result
   end
-
-  def search_photo_result
-    @photo = Photo.find_by_id(params[:id])
-    @results = @p.result
-  end
-
 
   private
   def photo_params
@@ -55,7 +49,7 @@ class PhotosController < ApplicationController
     end
   end 
 
-  def search_photo
-    @p = Photo.ransack(params[:q])
+  def set_q
+    @q = Photo.ransack(params[:q])
   end
 end
