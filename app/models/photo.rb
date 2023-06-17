@@ -8,11 +8,9 @@ class Photo < ApplicationRecord
   validates :image, presence: true
 
   def self.search(search)
-    if search != ""
-      Photo.where('text LIKE(?)', "%#{search}%")
-    else
-      Photo.all
-    end
+    
+      Photo.where('name LIKE(?)', "%#{search}%")
+    
   end
 
 end
