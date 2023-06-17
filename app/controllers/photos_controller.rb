@@ -1,9 +1,10 @@
 class PhotosController < ApplicationController
-  before_action :move_to_index, except: [:index, :show, :search]
-  before_action :set_q, only: [:index, :search]
+  before_action :set_photo, only: [:edit, :show]
+  before_action :move_to_index, except: [:index, :show]
 
   def index
     @photos = Photo.includes(:user).order("created_at DESC")
+
   end
 
   def new
@@ -15,13 +16,11 @@ class PhotosController < ApplicationController
   end
 
   def show
-    @photo = Photo.find(params[:id])
     @comment = Comment.new
     @comments = @photo.comments.includes(:user)
   end
 
   def edit
-    @photo = Photo.find(params[:id])
   end
 
   def update
@@ -35,7 +34,7 @@ class PhotosController < ApplicationController
   end
 
   def search
-    @results = @q.result
+    @photos = Photo.search(params[:keyword])
   end
 
   private
@@ -43,13 +42,14 @@ class PhotosController < ApplicationController
     params.require(:photo).permit(:name, :image, :text).merge(user_id: current_user.id)
   end
 
+  def set_photo
+    @photo = Photo.find(params[:id])
+  end
+
   def move_to_index
     unless user_signed_in?
       redirect_to action: :index
     end
-  end 
-
-  def set_q
-    @q = Photo.ransack(params[:q])
   end
+
 end
