@@ -12,7 +12,11 @@ class PhotosController < ApplicationController
   end
 
   def create
-    Photo.create(photo_params)
+    @photo = Photo.new(photo_params)
+    if @photo.save
+    else
+      render 'new'
+    end
   end
 
   def show
