@@ -28,8 +28,11 @@ class PhotosController < ApplicationController
   end
 
   def update
-    photo = Photo.find(params[:id])
-    photo.update(photo_params)
+    @photo = Photo.find(params[:id])
+    if @photo.update(photo_params)
+    else
+      render 'edit'
+    end
   end
 
   def destroy
