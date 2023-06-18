@@ -1,24 +1,46 @@
-# README
+# アプリケーション名
+  Nature and Buildings
+# アプリケーション概要
+　美しい風景をユーザー同士で共有し、旅行や散歩のきっかけを作る
+# URL
+  後で入れる
+# テスト用アカウント
+　後で入れる
+# 利用方法
+# 写真投稿
+1.トップページヘッダーからヘッダーからユーザー新規登録を行う  
+2.投稿するボタンから内容を入力し投稿する  
+# 写真検索
+フッターの入力フォームにキーワードを入れると検索一覧が表示される
+# 写真詳細
+投稿画像をクリックするとGoogleマップでの地図上の表記がされる
+# アプリケーションを作成した背景
+土地勘のない場所に行く時、住所から地図を検索することがほとんどだった。いっそのこと、同時に表示されるものがあれば便利だと思い、なおかつ範囲を広げればよりたくさんの人に使ってもらえると思い作成した。
+# 洗い出した要件
+後で追記
+# 実装した機能についての画像や画像やGIFおよびおよびその説明
+後で追記
+# 実装予定の機能
+現在、画像を複数投稿する機能機能を実装中。  
+今後はransackを使ったさまざまな検索機能を実装予定
+# データベース設計
+後で追記
+# 画面遷移図
+後で追記
+# 開発環境
+・フロントエンドフロントエンド  
+・バックエンド  
+・インフラ  
+・テスト  
+・テキストエディタ  
+・タスク管理
+# ローカルでの動作動作方法
+後で追記
+# 工夫したポイント
+追記
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
 
-Things you may want to cover:
 
-* Ruby version
 
-* System dependencies
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+  
