@@ -40,7 +40,7 @@
 </section>
 
 <h2 class="wrapper4">新規投稿一覧</h2>
-  <div class="photo-item">
+  <div class="post-item">
     <% @photos.each do |photo| %>
       <%= link_to photo_path(photo.id) do %>
         <li><%= image_tag photo.image.variant(resize: '400x400', gravity: "center", crop: "300x300+0+0" ) if photo.image.attached? %></li>

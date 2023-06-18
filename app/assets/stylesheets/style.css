@@ -188,14 +188,15 @@ form input[type="submit"]:hover {
   font-size: 36px;
 }
 
-.photo-item{
-  height: 500px;
+.post-item{
   display: flex;
   justify-content:space-around;
   flex-wrap: wrap;
 }
 
-.photo-item li{
+
+.post-item li{
+  
   width: 25%;
 }
 
@@ -219,11 +220,7 @@ form input[type="submit"]:hover {
   text-align: center;
   flex-wrap: wrap;
 }
-.post-item{
-  display: flex;
-  justify-content:space-around;
-  flex-wrap: wrap;
-}
+
 
 
 
