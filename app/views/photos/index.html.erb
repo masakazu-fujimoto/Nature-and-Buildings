@@ -1,8 +1,8 @@
 <section class="wrapper">
   <div class="container">
     <div class="content">
-      <h2 class="heading2">MESSAGE</h2>
-      <p>テキストテキストテキストテキストテキストテキストテキストテキスト<br>テキストテキストテキストテキストテキストテキストテキストテキスト</p>
+      <h2 class="heading2">美しき世界へようこそ</h2>
+      <h2><p>日常で発見した綺麗なものを<br>みんなで共有しませんか？</p>
     </div>
   </div>
 </section>
@@ -15,8 +15,8 @@
       </div>    
       <div class="content2-item">
         <div class="text">
-          <h2 class="heading2"><a href="/photos/new">投稿する  ▶︎</a></h2>
-            <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+          <h2 class="heading2"><a href="/photos/new">豊かな自然</a></h2>
+            <h2><p>そこには豊かな自然がある。<br>ここにはまだ豊かな自然が残っている。</p>
           </div>
         </div>
       </div>
@@ -31,22 +31,24 @@
       </div>    
       <div class="content3-item">
         <div class="text">
-          <h2 class="heading2"><a href="/searches/new">検索する  ▶︎</a></h2>
-            <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+          <h2 class="heading2"><a href="/searches/new">文化的な街並み</a></h2>
+            <h2><p>そこには文化的な街並みがある。<br>ここにも文化的な街並みが存在する</p>
           </div>
         </div>
       </div>
   </div>
 </section>
 
-<h2 class="wrapper4">新規投稿一覧</h2>
-  <div class="post-item">
-    <% @photos.each do |photo| %>
-      <%= link_to photo_path(photo.id) do %>
-        <li><%= image_tag photo.image.variant(resize: '400x400', gravity: "center", crop: "300x300+0+0" ) if photo.image.attached? %></li>
-        <li><%= photo.name %></li>   
-      <% end %>
-  <% end %>
+<section class="wrapper4">
+  <div class="container">
+    <div class="content">
+      <h5><div class="heading2">新規投稿一覧</h5>
+        <% @photos.each do |photo| %>
+          <%= link_to photo_path(photo.id) do %>
+            <%= image_tag photo.image.variant(resize: '400x400', gravity: "center", crop: "300x300+0+0" ) if photo.image.attached? %><br>
+            <h6><%= photo.name %>   
+          <% end %>
+        <% end %>
 </div>
 
 <section class="footer">
