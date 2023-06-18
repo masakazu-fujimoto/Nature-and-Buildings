@@ -1,14 +1,13 @@
 <div class="contents-post">
   <h1>検索結果一覧</h1>
-  <div class="post-item">
-  <% @photos.each do |photo| %>
-    <%= link_to photo_path(photo.id) do %>
-      <li><%= image_tag photo.image.variant(resize: '400x400', gravity: "center", crop: "300x300+0+0" ) if photo.image.attached? %></li>
-      <li><%= photo.name %></li>   
+  <div class="post-item"> 
+    <% @photos.each do |photo| %>
+      <%= link_to photo_path(photo.id) do %>
+        <li><%= image_tag photo.image.variant(resize: '400x400', gravity: "center", crop: "300x300+0+0" ) if photo.image.attached? %></li>
+        <li><%= photo.name %></li>   
+      <% end %>
     <% end %>
     <% if @photos.size == 0 %>
       <h3><p>一致した作品はありませんでした</p>
     <% end %>
-  <% end %>
-  
 </div>      

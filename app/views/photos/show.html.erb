@@ -6,19 +6,15 @@
       <%= link_to '編集する ▶︎', edit_photo_path(@photo.id), method: :get %><br>
       <%= "or" %><br>
       <%= link_to '削除する ▶︎', photo_path(@photo.id), method: :delete %>
-    <% end %>  
-    </div>
-    <div class="container-new">
-    <% if user_signed_in? %>
+    <% else %>
       <%= form_with(model: [@photo, @comment], local: true) do |form| %>
         <%= form.text_area :content, placeholder: "コメントする", rows: "5" %><br>
         <%= form.submit "SEND" %>
       <% end %>
-    <% else %>
-      <strong><p>※※※ コメントの投稿には新規登録/ログインが必要です ※※※</p></strong>
+      <p>※※※ コメントの投稿には新規登録/ログインが必要です ※※※</p>
     <% end %>
     <div class="comments">
-      <h4>＜コメント一覧＞</h4>
+      <h6>＜コメント一覧＞</h6>
       <% @comments.each do |comment| %>
         <p>
           <strong><%= link_to comment.user.nickname, "/users/#{comment.user_id}" %>：</strong>
