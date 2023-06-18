@@ -212,8 +212,20 @@ form input[type="submit"]:hover {
   background-color: #f0f0f0;
   position: fixed;
   bottom: 0px;
-
 }
+
+.contents-post{
+  padding: 130px;
+  text-align: center;
+  flex-wrap: wrap;
+}
+.post-item{
+  display: flex;
+  justify-content:space-around;
+  flex-wrap: wrap;
+}
+
+
 
 
 
