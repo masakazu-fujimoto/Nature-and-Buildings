@@ -18,7 +18,7 @@
       <div class="navbar">
         <% if user_signed_in? %>
           <ul class="nav-lists">
-            <%= link_to "ログアウト", destroy_user_session_path, method: :delete %>
+            <%= link_to "マイページに行く", "/users/#{current_user.id}" %>
             <%= link_to "投稿する", new_photo_path, class: "post" %>
         </ul>
         <% else %>
