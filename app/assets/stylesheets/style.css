@@ -156,7 +156,9 @@ a {
 .contents-new{
   padding: 130px;
   text-align: center;
-  background-color: #fafafa;
+  background-image: url('fukei43l.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 form input,
@@ -184,26 +186,29 @@ form input[type="submit"]:hover {
 .contents-new2{
   padding: 260px 0px;
   text-align: center;
-  background-color: #fafafa;
+  background-image: url('fukei43l.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .wrapper4{
   width: 100%;
   text-align: center;
   font-size: 36px;
+  
+  
+  
 }
 
 .post-item{
   display: flex;
   justify-content:space-around;
   flex-wrap: wrap;
-}
-
-
-.post-item li{
   
-  width: 25%;
 }
+
+
+
 
 .nav-lists2{
   border-radius: 20px;
@@ -224,6 +229,10 @@ form input[type="submit"]:hover {
   padding: 130px;
   text-align: center;
   flex-wrap: wrap;
+  background-image: url('fukei43l.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  
 }
 
 .headline{
@@ -232,10 +241,7 @@ form input[type="submit"]:hover {
 
 .wrapper4{
   width:100%;
-  padding: 130px 0px ;
-  background-image: url('158RED20404A_TP_V.webp');
-  background-repeat: no-repeat;
-  background-size: cover;
+  padding: 130px 0px 
   
 }
 

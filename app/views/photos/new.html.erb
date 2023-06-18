@@ -1,13 +1,15 @@
 <div class="contents-new">
-  <div class="container-new">
-    <h1>入力してください</h1>
-    <%= form_with(model: @photo, local: true) do |form| %>
-      <h3><%= render 'layouts/error_messages', model: form.object %>
-      <%= form.file_field :image %><br>
-      <%= form.text_field :name, placeholder: "作品名" %><br>
-      <%= form.text_area :text, placeholder: "作品説明文", rows: "10" %><br>
-      <%= form.submit "投稿する" %>
-    <% end %>
-  </div>
+  <div class="container">
+    <div class="container-new">
+      <h1>入力してください</h1>
+      <%= form_with(model: @photo, local: true) do |form| %>
+        <h3><%= render 'layouts/error_messages', model: form.object %>
+          <%= form.file_field :image %><br>
+          <%= form.text_field :name, placeholder: "作品名" %><br>
+          <%= form.text_area :text, placeholder: "作品説明文", rows: "10" %><br>
+          <%= form.submit "投稿する" %>
+      <% end %>
+    </div>
+  </div>  
 </div>
 

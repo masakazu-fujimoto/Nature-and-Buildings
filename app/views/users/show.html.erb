@@ -1,5 +1,6 @@
 <div class="contents-post">
-  <h3><p><%= @nickname %>さんの投稿一覧</p>
+  <div class="container">
+  <h2><p><%= @nickname %>さんの投稿一覧</p>
   <div class="post-item">
   <% @photos.each do |photo| %>
     <%= link_to photo_path(photo.id) do %>
