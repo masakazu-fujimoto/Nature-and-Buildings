@@ -19,14 +19,15 @@
 # 洗い出した要件
 後で追記
 # 実装した機能についての画像や画像やGIFおよびおよびその説明
-後で追記
+投稿する際、住所を記載していただくと、自動で緯度・経度を取得しGoogle Mapが詳細画面に表示されマッピングされます。  
+[![Image from Gyazo](https://i.gyazo.com/15dcf20eb69b7f5834ebac0bc05efbea.gif)](https://gyazo.com/15dcf20eb69b7f5834ebac0bc05efbea)
 # 実装予定の機能
 現在、画像を複数投稿する機能機能を実装中。  
 今後はransackを使ったさまざまな検索機能を実装予定
 # データベース設計
-後で追記
+[![Image from Gyazo](https://i.gyazo.com/f3f1e3791a5b1a14b8b573aee4f01aea.png)](https://gyazo.com/f3f1e3791a5b1a14b8b573aee4f01aea)
 # 画面遷移図
-後で追記
+[![Image from Gyazo](https://i.gyazo.com/0054a843337f501a1ce724da1cb1346c.png)](https://gyazo.com/0054a843337f501a1ce724da1cb1346c)
 # 開発環境
 ・フロントエンドフロントエンド  
 ・バックエンド  
@@ -37,8 +38,8 @@
 # ローカルでの動作動作方法
 後で追記
 # 工夫したポイント
-追記
-
+Google Mapをアプリ上で表示することを工夫しました。  
+gem 'geocoder'を使用することで、住所から緯度と経度を変換することができ、投稿者側の負担を減らせることができました。
 
 
 
