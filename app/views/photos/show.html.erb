@@ -1,7 +1,5 @@
 <div class="contents-new">
 <div class="container">
-  <h1><%= @photo.name %></h1>
-  <%= image_tag @photo.image.variant(resize: '400x400', gravity: "center", crop: "300x300+0+0" ) %>
   <script type="text/javascript">
      function initMap() {
        var test = {lat: <%= @photo.latitude %>, lng: <%= @photo.longitude %>};
@@ -32,8 +30,11 @@
      #map { height: 300px;
            width: 100%%;}
    </style>
-   <div id="map"></div>
-
+   <div id="map"></div><br>
+  <%= image_tag @photo.image.variant(resize: '700x700', gravity: "center", crop: "300x300+0+0" ) %>
+  <h1><%= @photo.name %></h1>
+  <h3><%= @photo.text %></h3>
+  
 
     <div class="heading2">
     <% if user_signed_in? && current_user.id == @photo.user_id %>
