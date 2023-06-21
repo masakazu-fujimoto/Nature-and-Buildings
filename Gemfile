@@ -62,3 +62,7 @@ gem 'rename'
 gem 'dotenv-rails'
 gem 'geocoder'
 
+group :production do
+  gem 'pg'
+end
+
