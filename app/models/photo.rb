@@ -7,6 +7,9 @@ class Photo < ApplicationRecord
   validates :text, presence: true
   validates :image, presence: true
 
+  geocoded_by :address
+  after_validation :geocode, if: :address_changed?
+
   def self.search(search)
     if search != ""
       Photo.where('name LIKE(?)', "%#{search}%")
@@ -15,4 +18,5 @@ class Photo < ApplicationRecord
     end
   end
 
+  
 end
