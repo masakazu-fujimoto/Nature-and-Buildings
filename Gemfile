@@ -59,4 +59,6 @@ gem 'image_processing', '~> 1.2'
 gem 'devise'
 gem 'ransack'
 gem 'rename'
+gem 'dotenv-rails'
+gem 'geocoder'
 
