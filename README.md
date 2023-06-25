@@ -3,9 +3,10 @@
 # アプリケーション概要
 　美しい風景をユーザー同士で共有し、旅行や散歩のきっかけを作る
 # URL
-  後で入れる
+  https://nature-and-buildings.onrender.com/
 # テスト用アカウント
-　後で入れる
+・Basic認証パスワード : 2222  
+・Basic認証ID : admin
 # 利用方法
 # 写真投稿
 1.トップページヘッダーからヘッダーからユーザー新規登録を行う  
@@ -20,7 +21,7 @@
 後で追記
 # 実装した機能についての画像や画像やGIFおよびおよびその説明
 投稿する際、住所を記載していただくと、自動で緯度・経度を取得しGoogle Mapが詳細画面に表示されマッピングされます。  
-[![Image from Gyazo](https://i.gyazo.com/15dcf20eb69b7f5834ebac0bc05efbea.gif)](https://gyazo.com/15dcf20eb69b7f5834ebac0bc05efbea)
+[![Image from Gyazo](https://i.gyazo.com/aca712c7d7e41e7eaeb4012f9bae48e3.gif)](https://gyazo.com/aca712c7d7e41e7eaeb4012f9bae48e3)
 # 実装予定の機能
 現在、画像を複数投稿する機能機能を実装中。  
 今後はransackを使ったさまざまな検索機能を実装予定
@@ -36,7 +37,12 @@
 ・テキストエディタ  
 ・タスク管理
 # ローカルでの動作動作方法
-後で追記
+以下のコマンドを順に実行  
+
+git clone https://github.com/masakazu-fujimoto/Nature-and-Buildings  
+cd Nature-and-Buildings  
+bundle install   
+yarn install
 # 工夫したポイント
 Google Mapをアプリ上で表示することを工夫しました。  
 gem 'geocoder'を使用することで、住所から緯度と経度を変換することができ、投稿者側の負担を減らせることができました。
