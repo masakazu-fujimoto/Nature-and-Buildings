@@ -14,11 +14,11 @@ https://nature-and-buildings.onrender.com/
 # 写真検索
 フッターの入力フォームにキーワードを入れると検索一覧が表示される
 # 写真詳細
-投稿画像をクリックするとGoogleマップでの地図上の表記がされる
+投稿画像をクリックするとGoogle Mapでの地図上の表記がされる
 # アプリケーションを作成した背景
 土地勘のない場所に行く時、住所から地図を検索することがほとんどでした。いっそのこと、同時に表示されるものがあれば便利だと思い、なおかつ範囲を広げればよりたくさんの人に使ってもらえると思い作成しました。
 # 洗い出した要件
-後で追記
+https://docs.google.com/spreadsheets/d/1KdhTZFTyVnn19WxcagjA_o6lqeNrBZ3IOhOeBZd5J_Q/edit#gid=982722306
 # 実装した機能についての画像や画像やGIFおよびおよびその説明
 投稿する際、住所を記載していただくと、自動で緯度・経度を取得しGoogle Mapが詳細画面に表示されマッピングされます。  
 [![Image from Gyazo](https://i.gyazo.com/2f990c59d8bf87c81aa582acdd63939e.gif)](https://gyazo.com/2f990c59d8bf87c81aa582acdd63939e)
