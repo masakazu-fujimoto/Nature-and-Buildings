@@ -40,7 +40,7 @@
 </section>
 
 <h2 class="wrapper4">新規投稿一覧</h2>
-    <div class="post-item">
+    <div class="post-item2">
       <% @photos.each do |photo| %>
         <%= link_to photo_path(photo.id) do %>
           <%= image_tag photo.image.variant(resize: '400x400', gravity: "center", crop: "300x300+0+0" ) if photo.image.attached? %>
@@ -49,6 +49,8 @@
     </div> 
   </div>  
 </div>
+
+<section class="wrapper5">
 
 <section class="footer">
     <div class="nav-lists2">
