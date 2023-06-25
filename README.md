@@ -1,9 +1,9 @@
 # アプリケーション名
-  Nature and Buildings
+Nature and Buildings
 # アプリケーション概要
-　美しい風景をユーザー同士で共有し、旅行や散歩のきっかけを作る
+美しい風景をユーザー同士で共有し、旅行や散歩のきっかけを作る
 # URL
-  https://nature-and-buildings.onrender.com/
+https://nature-and-buildings.onrender.com/
 # テスト用アカウント
 ・Basic認証パスワード : 2222  
 ・Basic認証ID : admin
@@ -21,10 +21,10 @@
 後で追記
 # 実装した機能についての画像や画像やGIFおよびおよびその説明
 投稿する際、住所を記載していただくと、自動で緯度・経度を取得しGoogle Mapが詳細画面に表示されマッピングされます。  
-[![Image from Gyazo](https://i.gyazo.com/aca712c7d7e41e7eaeb4012f9bae48e3.gif)](https://gyazo.com/aca712c7d7e41e7eaeb4012f9bae48e3)
+![demo](https://gyazo.com/aca712c7d7e41e7eaeb4012f9bae48e3)
 # 実装予定の機能
 現在、画像を複数投稿する機能機能を実装中。  
-今後はransackを使ったさまざまな検索機能を実装予定
+今後はransackを使ったさまざまな検索機能を実装予定。。
 # データベース設計
 [![Image from Gyazo](https://i.gyazo.com/f3f1e3791a5b1a14b8b573aee4f01aea.png)](https://gyazo.com/f3f1e3791a5b1a14b8b573aee4f01aea)
 # 画面遷移図
