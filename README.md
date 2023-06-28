@@ -6,7 +6,9 @@ Nature and Buildings
 https://nature-and-buildings.onrender.com/
 # テスト用アカウント
 ・Basic認証パスワード : 2222  
-・Basic認証ID : admin
+・Basic認証ID : admin  
+・メールアドレス:aa@aa  
+・パスワード:aaa111
 # 利用方法
 # 写真投稿
 1.トップページヘッダーからヘッダーからユーザー新規登録を行う  
