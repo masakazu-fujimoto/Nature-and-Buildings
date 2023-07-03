@@ -25,8 +25,8 @@ https://docs.google.com/spreadsheets/d/1KdhTZFTyVnn19WxcagjA_o6lqeNrBZ3IOhOeBZd5
 投稿する際、住所を記載していただくと、自動で緯度・経度を取得しGoogle Mapが詳細画面に表示されマッピングされます。  
 [![Image from Gyazo](https://i.gyazo.com/2f990c59d8bf87c81aa582acdd63939e.gif)](https://gyazo.com/2f990c59d8bf87c81aa582acdd63939e)
 # 実装予定の機能
-現在、画像を複数投稿する機能機能を実装中。  
-今後はransackを使ったさまざまな検索機能を実装予定。
+現在、画像を複数投稿する機能機能を実装中です。  
+今後はransackを使ったさまざまな検索機能を実装予定です。
 # データベース設計
 [![Image from Gyazo](https://i.gyazo.com/f3f1e3791a5b1a14b8b573aee4f01aea.png)](https://gyazo.com/f3f1e3791a5b1a14b8b573aee4f01aea)
 # 画面遷移図
