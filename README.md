@@ -26,7 +26,7 @@ https://docs.google.com/spreadsheets/d/1KdhTZFTyVnn19WxcagjA_o6lqeNrBZ3IOhOeBZd5
 [![Image from Gyazo](https://i.gyazo.com/2f990c59d8bf87c81aa582acdd63939e.gif)](https://gyazo.com/2f990c59d8bf87c81aa582acdd63939e)
 # 実装予定の機能
 現在、画像を複数投稿する機能機能を実装中。  
-今後はransackを使ったさまざまな検索機能を実装予定。。
+今後はransackを使ったさまざまな検索機能を実装予定。
 # データベース設計
 [![Image from Gyazo](https://i.gyazo.com/f3f1e3791a5b1a14b8b573aee4f01aea.png)](https://gyazo.com/f3f1e3791a5b1a14b8b573aee4f01aea)
 # 画面遷移図
